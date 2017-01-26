@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/LinearLayout1"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="#012345"
+    android:weightSum="1">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="#0099FF"
+        android:id="@+id/linearLayout">
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Autor: Albert Fernandez Niell"
+            android:gravity="center"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+
+    <TextView
+        android:text="Latitud:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/linearLayout"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:id="@+id/tvLat"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLat"
+        android:layout_toEndOf="@+id/tvLat"
+        android:layout_marginStart="40dp"
+        android:id="@+id/tvNumLat"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:text="Longitud:"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tvLat"
+        android:layout_alignStart="@+id/tvLat"
+        android:layout_marginTop="26dp"
+        android:id="@+id/tvLong"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+    <TextView
+        android:text="TextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/tvLong"
+        android:layout_alignStart="@+id/tvNumLat"
+        android:id="@+id/tvNumLong"
+        android:textColor="#FFFFFF"
+        android:textSize="25dp"/>
+
+</RelativeLayout>
